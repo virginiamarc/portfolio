@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Title from '../layouts/Title';
 import ResumeCard from './ResumeCard';
 
 const Experience = () => {
