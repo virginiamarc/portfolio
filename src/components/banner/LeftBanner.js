@@ -12,7 +12,7 @@ const LeftBanner = () => {
         delaySpeed: 2000,
     });
     return (
-        <div className="w-1/2 flex flex-col gap-20">
+        <div className="w-full lgl:w-1/2 flex flex-col gap-20">
             <div className="flex flex-col gap-5">
                 <h4 className="text-lg font-normal">EXPLORING MY JOURNEY</h4>
                 <h1 className="text-6xl font-bold text-white">
@@ -31,9 +31,9 @@ const LeftBanner = () => {
                     I am a passionate web developer with a strong desire to create innovative and user-friendly websites. With a solid foundation in HTML, CSS, and JavaScript, I am constantly expanding my skill set to stay up-to-date with the latest technologies and trends in web development. I am dedicated to delivering high-quality work and providing exceptional user experiences through my projects.
                 </p>
             </div>
-                <div className="flex justify-between items-start gap-10 w-full">
+                <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
 
-                    <div className="flex flex-col">
+                    <div>
                         <h2 className="text-base uppercase font-titleFont mb-4">
                             Explore My Journey
                         </h2>

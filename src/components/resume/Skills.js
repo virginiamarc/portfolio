@@ -6,17 +6,17 @@ const Skills = () => {
         <motion.div 
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1, transition: { duration: 0.5 } }} 
-            className="w-full flex gap-20"
+            className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
         >
 
             {/* SECTION 1 — DESIGN SKILLS */}
-            <div className="w-1/2">
-                <div className="py-12 font-titleFont flex flex-col gap-4">
+            <div className="w-full lgl:w-1/2">
+                <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
                     <p className="text-sm text-designColor tracking-[4px] uppercase">Features</p>
-                    <h2 className="text-4xl font-bold">Design Skills</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold">Design Skills</h2>
                 </div>
 
-                <div className="mt-14 w-full flex flex-col gap-6">
+                <div className="mt-6 lgl:mt-14 w-full flex flex-col gap-6">
                     <div className="overflow-x-hidden">
                         <p className="text-sm uppercase font-medium">Photoshop</p>
                         <span className="w-full h-2 bgOpacity inline-flex rounded-md mt-2">
@@ -86,13 +86,13 @@ const Skills = () => {
             </div>
 
             {/* SECTION 2 — DEVELOPMENT SKILLS */}
-            <div className="w-1/2">
-                <div className="py-12 font-titleFont flex flex-col gap-4">
+            <div className="w-full lgl:w-1/2">
+                <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
                     <p className="text-sm text-designColor tracking-[4px] uppercase">Features</p>
-                    <h2 className="text-4xl font-bold">Development Skills</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold">Development Skills</h2>
                 </div>
 
-                <div className="mt-14 w-full flex flex-col gap-6">
+                <div className="mt-6 lgl:mt-14 w-full flex flex-col gap-6">
                     <div className="overflow-x-hidden">
                         <p className="text-sm uppercase font-medium">Photoshop</p>
                         <span className="w-full h-2 bgOpacity inline-flex rounded-md mt-2">
