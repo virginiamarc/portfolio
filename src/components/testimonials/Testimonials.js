@@ -87,142 +87,58 @@ const Testimonials = () => {
         <Title title="WHAT CLIENTS SAY" des="Testimonials" />
       </div>
 
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto mt-10">
         <Slider {...settings}>
 
-          {/* =========== Jacqueline P. =========== */}
-          <div className="w-full">
-            <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
+          {/* Jacqueline P. */}
+          <div className="w-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne">
+            <img className="w-16 mb-6" src={quote} alt="quote" />
 
-              {/* LEFT */}
-              <div className="w-full lgl:w-[35%] bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center">
-                <p className="text-xs uppercase text-designColor tracking-wide mb-2">
-                  Client Testimonial
-                </p>
-                <h3 className="text-2xl font-bold">Jacqueline P.</h3>
-                <p className="text-base tracking-wide text-gray-500">
-                  Professional Client
-                </p>
-              </div>
+            <p className="text-lg text-gray-300 leading-7 italic">
+              “I appreciate you so much and I will not forget your professional
+              experience and the value that you have shared with me.”
+              <span className="ml-1 italic text-gray-300"> — Jacqueline P.</span>
+            </p>
 
-              {/* RIGHT */}
-              <div className="w-full lgl:w-[60%] flex flex-col justify-between">
-                <img className="w-20 lgl:w-32" src={quote} alt="quote" />
-
-                <div className="w-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-6 lgl:p-8 flex flex-col gap-6">
-                  <div className="flex flex-col lgl:items-center py-6 border-b-2 border-gray-900">
-                    <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
-                      A Truly Valuable Experience
-                    </h3>
-                    <p className="text-base text-gray-400 mt-3">
-                      Client Feedback — 2024
-                    </p>
-
-                    <div className="text-yellow-500 flex gap-1 mt-4">
-                      <RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill />
-                    </div>
-                  </div>
-
-                  <p className="text-base font-titleFont text-gray-400 leading-6">
-                    “I appreciate you so much and I will not forget your
-                    professional experience and the value that you have shared
-                    with me.”
-                  </p>
-                </div>
-              </div>
-
+            <div className="flex gap-1 text-yellow-500 mt-4">
+              <RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill />
             </div>
           </div>
 
-          {/* =========== Barbara P. =========== */}
-          <div className="w-full">
-            <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
+          {/* Barbara P. */}
+          <div className="w-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne">
+            <img className="w-16 mb-6" src={quote} alt="quote" />
 
-              {/* LEFT */}
-              <div className="w-full lgl:w-[35%] bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center">
-                <p className="text-xs uppercase text-designColor tracking-wide mb-2">
-                  Client Testimonial
-                </p>
-                <h3 className="text-2xl font-bold">Barbara P.</h3>
-                <p className="text-base tracking-wide text-gray-500">
-                  Business Client
-                </p>
-              </div>
+            <p className="text-lg text-gray-300 leading-7 italic">
+              “Virginia delivered exactly what we needed and made the process
+              incredibly smooth.”
+              <span className="ml-1 italic text-gray-300"> — Barbara P.</span>
+            </p>
 
-              {/* RIGHT */}
-              <div className="w-full lgl:w-[60%] flex flex-col justify-between">
-                <img className="w-20 lgl:w-32" src={quote} alt="quote" />
-
-                <div className="w-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-6 lgl:p-8 flex flex-col gap-6">
-                  <div className="flex flex-col lgl:items-center py-6 border-b-2 border-gray-900">
-                    <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
-                      Smooth, Professional, Reliable
-                    </h3>
-                    <p className="text-base text-gray-400 mt-3">
-                      Client Feedback — 2024
-                    </p>
-
-                    <div className="text-yellow-500 flex gap-1 mt-4">
-                      <RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill />
-                    </div>
-                  </div>
-
-                  <p className="text-base font-titleFont text-gray-400 leading-6">
-                    “Virginia delivered exactly what we needed and made the
-                    process incredibly smooth.”
-                  </p>
-                </div>
-              </div>
-
+            <div className="flex gap-1 text-yellow-500 mt-4">
+              <RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill />
             </div>
           </div>
 
-          {/* =========== Giovanna L. =========== */}
-          <div className="w-full">
-            <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
+          {/* Giovanna L. */}
+          <div className="w-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne">
+            <img className="w-16 mb-6" src={quote} alt="quote" />
 
-              {/* LEFT */}
-              <div className="w-full lgl:w-[35%] bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col gap-8 justify-center">
-                <p className="text-xs uppercase text-designColor tracking-wide mb-2">
-                  Client Testimonial
-                </p>
-                <h3 className="text-2xl font-bold">Giovanna L.</h3>
-                <p className="text-base tracking-wide text-gray-500">
-                  Creative Client
-                </p>
-              </div>
+            <p className="text-lg text-gray-300 leading-7 italic">
+              “Working with Virginia was a joy. She is professional, fast, and truly
+              cares about her clients.”
+              <span className="ml-1 italic text-gray-300"> — Giovanna L.</span>
+            </p>
 
-              {/* RIGHT */}
-              <div className="w-full lgl:w-[60%] flex flex-col justify-between">
-                <img className="w-20 lgl:w-32" src={quote} alt="quote" />
-
-                <div className="w-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-6 lgl:p-8 flex flex-col gap-6">
-                  <div className="flex flex-col lgl:items-center py-6 border-b-2 border-gray-900">
-                    <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
-                      A Joy to Work With
-                    </h3>
-                    <p className="text-base text-gray-400 mt-3">
-                      Client Feedback — 2024
-                    </p>
-
-                    <div className="text-yellow-500 flex gap-1 mt-4">
-                      <RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill />
-                    </div>
-                  </div>
-
-                  <p className="text-base font-titleFont text-gray-400 leading-6">
-                    “Working with Virginia was a joy. She is professional, fast,
-                    and truly cares about her clients.”
-                  </p>
-                </div>
-              </div>
-
+            <div className="flex gap-1 text-yellow-500 mt-4">
+              <RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill /><RiStarFill />
             </div>
           </div>
 
         </Slider>
       </div>
     </section>
+
   );
 };
 
