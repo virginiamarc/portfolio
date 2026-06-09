@@ -1,41 +1,39 @@
 import React, { useState } from 'react';
 import Title from '../layouts/Title';
-import Education from './Education';
+import EducationExperience from './EducationExperience';
 import Skills from './Skills';
-import Experience from './Experience';
+import TechStack from './TechStack';
 import Certifications from './Certifications';
 
 const Resume = () => {
-    const [educationData, setEducationData]= useState(true);
+    const [educationExperienceData, setEducationExperienceData]= useState(true);
     const [skillsData, setSkillsData]= useState(false);
-    const [experienceData, setExperienceData]= useState(false);
+    const [techStackData, setTechStackData]= useState(false);
     const [certificationsData, setCertificationsData]= useState(false);
     return (
         <section id="resume" className="w-full py-20 border-b-[1px] border-[#FF7ACD]">
             <div className="flex justify-center items-center text-center">
-                <Title title="Resume & Experience" des="Professional Journey" />
+                <Title title="Resume Overview" des="Professional Journey" />
             </div>
 
             <div>
                 <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-                    <li onClick={() => 
-                            setEducationData(true) &
-                            setSkillsData(false) &
-                            setExperienceData(false) &
-                            setCertificationsData(false)
-                        }
-                        className={`${
-                            educationData 
-                            ? "border-designColor rounded-lg" 
-                            : "border-transparent"
-                        } resumeLi`}
+                    <li
+                        onClick={() => {
+                            setEducationExperienceData(true);
+                            setSkillsData(false);
+                            setTechStackData(false);
+                            setCertificationsData(false);
+                        }}
+                        className={`${educationExperienceData ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`}
                     >
-                        Education
+                        Education & Experience
                     </li>
+
                     <li onClick={() => 
-                            setEducationData(false) &
+                            setEducationExperienceData(false) &
                             setSkillsData(true) &
-                            setExperienceData(false) &
+                            setTechStackData(false) &
                             setCertificationsData(false)
                         }
                         className={`${
@@ -47,23 +45,23 @@ const Resume = () => {
                         Skills
                     </li>
                     <li onClick={() => 
-                            setEducationData(false) &
+                            setEducationExperienceData(false) &
                             setSkillsData(false) &
-                            setExperienceData(true) &
+                            setTechStackData(true) &
                             setCertificationsData(false)
                         }
                         className={`${
-                            experienceData 
+                            techStackData 
                             ? "border-designColor rounded-lg" 
                             : "border-transparent"
                         } resumeLi`}
                     >
-                        Experience
+                        Tech Stack
                     </li>
                     <li onClick={() =>
-                            setEducationData(false) &
+                            setEducationExperienceData(false) &
                             setSkillsData(false) &
-                            setExperienceData(false) &
+                            setTechStackData(false) &
                             setCertificationsData(true)
                         }
                         className={`${
@@ -76,9 +74,9 @@ const Resume = () => {
                     </li>
                 </ul>
             </div>
-            {educationData && <Education />}
+            {educationExperienceData && <EducationExperience />}
             {skillsData && <Skills />}
-            {experienceData && <Experience />}
+            {techStackData && <TechStack />}
             {certificationsData && <Certifications />}
         
         </section>
