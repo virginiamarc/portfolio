@@ -13,12 +13,29 @@ const Navbar = () => {
 
     return (
         <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-[#FF7ACD]">
-            <div className="flex items-center gap-0.1">
-                <img src={virginia} alt="Virginia" className="w-16 h-16 rounded-full object-cover object-top border-2 border-[#FF7ACD] shadow-md" />
-                <Link to="home" spy={true} smooth={true} offset={-70} duration={500} className="cursor-pointer">
-                    <img src={logo} alt="Logo" className="w-16 h-auto object-contain" />
+            <div className="flex items-center gap-1">
+                <img
+                    src={virginia}
+                    alt="Virginia"
+                    className="w-14 h-14 lgl:w-16 lgl:h-16 rounded-full object-cover object-top border-2 border-[#FF7ACD] shadow-md"
+                />
+
+                <Link
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="cursor-pointer"
+                >
+                    <img
+                    src={logo}
+                    alt="Logo"
+                    className="w-12 lgl:w-14 object-contain"
+                    />
                 </Link>
             </div>
+
             <div>
                 <ul className="hidden md:inline-flex flex items-center gap-6 lgl:gap-10">
                     {navLinks.map(({ _id, title, link }) => (
