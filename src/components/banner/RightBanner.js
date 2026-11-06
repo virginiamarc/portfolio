@@ -16,10 +16,7 @@ const RightBanner = () => {
       >
         {/* Image INSIDE the circle */}
         <img
-          className="w-[300px] h-[420px]
-          md:w-[360px] md:h-[540px]
-          lgl:w-[500px] lgl:h-[720px]
-          object-cover"
+          className="h-full w-full object-cover object-center"
           src={bannerImg}
           alt="Virginia Marc"
         />
