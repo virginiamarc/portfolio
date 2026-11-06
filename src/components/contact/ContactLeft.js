@@ -42,7 +42,7 @@ const ContactLeft = () => {
 
         <div className="flex gap-4">
           <a
-            href="https://www.facebook.com/virginiamarc"
+            href="https://www.facebook.com/profile.php?id=61595865270454"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook profile"
