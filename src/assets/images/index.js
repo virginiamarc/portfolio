@@ -1,5 +1,5 @@
 import logo from "./logo.png";
-import virginia from "./virginia.png";
+import virginia from "./virginia.jpg";
 import bannerImg from "./bannerImg.png";
 import projectOne from "./projects/projectOne.png";
 import projectTwo from "./projects/projectTwo.png";
