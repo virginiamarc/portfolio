@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {logo} from "../../assets/images";
 import { virginia } from '../../assets/images';
 import { navLinks } from '../../constants';
@@ -12,12 +12,12 @@ const Navbar = () => {
     console.log(showMenu);
 
     return (
-        <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-[#FF7ACD]">
+        <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-[#8E3CA8]">
             <div className="flex items-center gap-1">
                 <img
                     src={virginia}
                     alt="Virginia"
-                    className="w-14 h-14 lgl:w-16 lgl:h-16 rounded-full object-cover object-top border-2 border-[#FF7ACD] shadow-md"
+                    className="w-14 h-14 lgl:w-16 lgl:h-16 rounded-full object-cover object-top border-2 border-[#8E3CA8] shadow-md"
                 />
 
                 <Link
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <ul className="hidden md:inline-flex flex items-center gap-6 lgl:gap-10">
                     {navLinks.map(({ _id, title, link }) => (
                         <li 
-                            className="text-base font-normal text-[#B57CFF] tracking-wide cursor-pointer hover:text-[#FF7ACD] transition-colors duration-200"
+                            className="text-base font-normal text-[#C85ACF] tracking-wide cursor-pointer hover:text-white transition-colors duration-200"
                             key={_id}
                         >
                             <Link
@@ -72,7 +72,7 @@ const Navbar = () => {
                             </p>
                             <ul className="flex flex-col gap-4">
                                 { navLinks.map(({ _id, title, link }) => (
-                                    <li key={_id} className="text-base font-normal text-[#B57CFF] tracking-wide cursor-pointer hover:text-[#FF7ACD] duration-300"
+                                    <li key={_id} className="text-base font-normal text-[#C85ACF] tracking-wide cursor-pointer hover:text-white duration-300"
                                     >
                                         <Link
                                             onClick={() => setShowMenu(false)}
@@ -88,22 +88,45 @@ const Navbar = () => {
                                     </li>
                                 ))}
                             </ul>
+                            
                             <div className="flex flex-col gap-4">
                                 <h2 className="text-base uppercase font-titleFont mb-4">
-                                    Find me in
+                                    Find me on
                                 </h2>
+
                                 <div className="flex gap-4">
-                                    <span className="bannerIcon">
-                                        <FaFacebookF />
-                                    </span>
-                                    <span className="bannerIcon">
-                                        <FaTwitter />
-                                    </span>
-                                    <span className="bannerIcon">
-                                        <FaLinkedinIn />
-                                    </span>
+                                    <a
+                                    href="https://www.facebook.com/profile.php?id=61595865270454"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Facebook profile"
+                                    className="bannerIcon"
+                                    >
+                                    <FaFacebookF />
+                                    </a>
+
+                                    <a
+                                    href="https://github.com/virginiamarc"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="GitHub profile"
+                                    className="bannerIcon"
+                                    >
+                                    <FaGithub />
+                                    </a>
+
+                                    <a
+                                    href="https://www.linkedin.com/in/virginiamarc/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="LinkedIn profile"
+                                    className="bannerIcon"
+                                    >
+                                    <FaLinkedinIn />
+                                    </a>
                                 </div>
                             </div>
+
                             <span 
                                 onClick={() => setShowMenu(false)} 
                                 className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
