@@ -20,59 +20,69 @@ const Resume = () => {
                 <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
                     <li
                         onClick={() => {
-                            setEducationExperienceData(true);
-                            setSkillsData(false);
-                            setTechStackData(false);
-                            setCertificationsData(false);
+                        setEducationExperienceData(true);
+                        setSkillsData(false);
+                        setTechStackData(false);
+                        setCertificationsData(false);
                         }}
-                        className={`${educationExperienceData ? "border-designColor rounded-lg" : "border-transparent"} resumeLi`}
+                        className={`${
+                        educationExperienceData
+                            ? "border-designColor rounded-lg"
+                            : "border-transparent"
+                        } resumeLi`}
                     >
                         Education & Experience
                     </li>
 
-                    <li onClick={() => 
-                            setEducationExperienceData(false) &
-                            setSkillsData(true) &
-                            setTechStackData(false) &
-                            setCertificationsData(false)
-                        }
+                    <li
+                        onClick={() => {
+                        setEducationExperienceData(false);
+                        setSkillsData(true);
+                        setTechStackData(false);
+                        setCertificationsData(false);
+                        }}
                         className={`${
-                            skillsData 
-                            ? "border-designColor rounded-lg" 
+                        skillsData
+                            ? "border-designColor rounded-lg"
                             : "border-transparent"
                         } resumeLi`}
                     >
                         Skills
                     </li>
-                    <li onClick={() => 
-                            setEducationExperienceData(false) &
-                            setSkillsData(false) &
-                            setTechStackData(true) &
-                            setCertificationsData(false)
-                        }
+
+                    <li
+                        onClick={() => {
+                        setEducationExperienceData(false);
+                        setSkillsData(false);
+                        setTechStackData(true);
+                        setCertificationsData(false);
+                        }}
                         className={`${
-                            techStackData 
-                            ? "border-designColor rounded-lg" 
+                        techStackData
+                            ? "border-designColor rounded-lg"
                             : "border-transparent"
                         } resumeLi`}
                     >
                         Tech Stack
                     </li>
-                    <li onClick={() =>
-                            setEducationExperienceData(false) &
-                            setSkillsData(false) &
-                            setTechStackData(false) &
-                            setCertificationsData(true)
-                        }
+
+                    <li
+                        onClick={() => {
+                        setEducationExperienceData(false);
+                        setSkillsData(false);
+                        setTechStackData(false);
+                        setCertificationsData(true);
+                        }}
                         className={`${
-                            certificationsData 
-                            ? "border-designColor rounded-lg" 
+                        certificationsData
+                            ? "border-designColor rounded-lg"
                             : "border-transparent"
                         } resumeLi`}
                     >
                         Certifications
                     </li>
                 </ul>
+
             </div>
             {educationExperienceData && <EducationExperience />}
             {skillsData && <Skills />}
