@@ -1,6 +1,6 @@
 import logo from "./logo.png";
 import virginia from "./virginia.jpg";
-import bannerImg from "./bannerImg.png";
+import bannerImg from "./bannerImg.jpg";
 import projectOne from "./projects/projectOne.png";
 import projectTwo from "./projects/projectTwo.png";
 import projectThree from "./projects/projectThree.png";
