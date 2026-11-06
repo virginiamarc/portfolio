@@ -11,7 +11,7 @@ const Resume = () => {
     const [techStackData, setTechStackData]= useState(false);
     const [certificationsData, setCertificationsData]= useState(false);
     return (
-        <section id="resume" className="w-full py-20 border-b-[1px] border-[#FF7ACD]">
+        <section id="resume" className="w-full py-20 border-b-[1px] border-[#8E3CA8]">
             <div className="flex justify-center items-center text-center">
                 <Title title="Resume Overview" des="Professional Journey" />
             </div>

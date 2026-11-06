@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <section id='home' 
         className="w-full py-20 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center border-b-[1px] font-titleFont 
-        border-[#FF7ACD]"
+        border-[#8E3CA8]"
     >
         <LeftBanner />
         <RightBanner />

@@ -63,9 +63,12 @@ const Navbar = () => {
                     <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
                         <div className= "flex flex-col gap-8 py-2 relative">
                             <div className="flex items-center gap-2">
-                                <img src={virginia} alt="Virginia" className="w-16 h-16 rounded-full object-cover object-top border-2 border-[#FF7ACD] shadow-md" />
+                                <img
+                                    src={virginia}
+                                    alt="Virginia"
+                                    className="w-16 h-16 rounded-full object-cover object-top border-2 border-[#8E3CA8] shadow-md"
+                                />
                                 <img src={logo} alt="Logo" className="w-16 h-auto object-contain" />
-                            
                             </div>
                             <p className="text-sm text-gray-400 mt-2">
                                     Welcome to my portfolio! I'm a passionate developer dedicated to crafting innovative solutions and creating impactful digital experiences. Explore my projects and let's connect!

@@ -98,10 +98,10 @@ const Certifications = () => {
 
         {/* Divider Header */}
         <h3 className="text-lg md:text-xl font-semibold mb-12 flex items-center justify-center gap-4 text-gray-200 uppercase tracking-widest">
-          <span className="h-[1px] w-12 bg-[#FF7ACD]/40"></span>
+          <span className="h-[1px] w-12 bg-[#8E3CA8]/60"></span>
           <FaLinkedin className="text-xl" />
           LinkedIn Learning
-          <span className="h-[1px] w-12 bg-[#FF7ACD]/40"></span>
+          <span className="h-[1px] w-12 bg-[#8E3CA8]/60"></span>
         </h3>
 
         {/* Certification Cards */}
@@ -115,7 +115,7 @@ const Certifications = () => {
               className="group cursor-pointer"
               onClick={() => setSelectedImage(cert.image)}
             >
-              <div className="flex items-center justify-between p-5 rounded-lg border border-gray-700 bg-black/20 hover:bg-black/30 transition-all duration-300 group-hover:shadow-[0_0_25px_#FF7ACD50]">
+              <div className="flex items-center justify-between p-5 rounded-lg border border-gray-700 bg-black/20 hover:bg-black/30 transition-all duration-300 group-hover:shadow-[0_0_25px_#8E3CA850]">
                 
                 {/* ResumeCard Content */}
                 <div className="w-[70%]">
@@ -131,7 +131,7 @@ const Certifications = () => {
                 <img
                   src={cert.image}
                   alt={cert.title}
-                  className="w-20 h-20 object-cover rounded-md shadow-md group-hover:scale-105 group-hover:shadow-[0_0_15px_#FF7ACD80] transition-all duration-300"
+                  className="w-20 h-20 object-cover rounded-md shadow-md group-hover:scale-105 group-hover:shadow-[0_0_15px_#C85ACF80] transition-all duration-300"
                 />
               </div>
             </motion.div>
@@ -140,9 +140,9 @@ const Certifications = () => {
 
         {/* Azure Divider (empty for now) */}
         <h3 className="text-lg md:text-xl font-semibold my-12 flex items-center justify-center gap-4 text-gray-200 uppercase tracking-widest">
-          <span className="h-[1px] w-12 bg-[#FF7ACD]/40"></span>
+          <span className="h-[1px] w-12 bg-[#8E3CA8]/60"></span>
           Azure Certifications
-          <span className="h-[1px] w-12 bg-[#FF7ACD]/40"></span>
+          <span className="h-[1px] w-12 bg-[#8E3CA8]/60"></span>
         </h3>
 
         {/* Azure Placeholder Cards */}
@@ -161,7 +161,7 @@ const Certifications = () => {
                 AZ-900: Microsoft Azure Fundamentals
                 </h4>
                 <p className="text-sm text-gray-400">Microsoft Learn</p>
-                <p className="text-sm text-designColor mt-1 tracking-wide">
+                <p className="text-sm text-[#C85ACF] mt-1 tracking-wide">
                 Coming Soon
                 </p>
             </div>
@@ -185,7 +185,7 @@ const Certifications = () => {
                 AI-900: Azure AI Fundamentals
                 </h4>
                 <p className="text-sm text-gray-400">Microsoft Learn</p>
-                <p className="text-sm text-designColor mt-1 tracking-wide">
+                <p className="text-sm text-[#C85ACF] mt-1 tracking-wide">
                 Coming Soon
                 </p>
             </div>
@@ -209,7 +209,7 @@ const Certifications = () => {
                 DP-900: Azure Data Fundamentals
                 </h4>
                 <p className="text-sm text-gray-400">Microsoft Learn</p>
-                <p className="text-sm text-designColor mt-1 tracking-wide">
+                <p className="text-sm text-[#C85ACF] mt-1 tracking-wide">
                 Coming Soon
                 </p>
             </div>

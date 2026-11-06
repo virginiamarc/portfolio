@@ -21,7 +21,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="w-14 h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-2xl text-designColor flex justify-center items-center absolute top-0 right-20 shadow-shadowOne cursor-pointer z-10"
+      className="w-14 h-12 bg-[#0c1821] hover:bg-black duration-300 rounded-md text-2xl text-[#C85ACF] flex justify-center items-center absolute top-0 right-20 shadow-shadowOne cursor-pointer z-10"
       onClick={onClick}
     >
       <HiArrowLeft />
@@ -62,7 +62,7 @@ const Testimonials = () => {
             ? {
                 width: "12px",
                 height: "12px",
-                background: "#CC55FF",
+                background: "#8E3CA8",
                 borderRadius: "50%",
                 cursor: "pointer",
               }
@@ -81,7 +81,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="w-full py-20 border-b-[1px] border-[#FF7ACD]"
+      className="w-full py-20 border-b-[1px] border-[#8E3CA8]"
     >
       <div className="flex justify-center items-center text-center">
         <Title title="WHAT CLIENTS SAY" des="Testimonials" />

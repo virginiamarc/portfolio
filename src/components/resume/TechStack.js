@@ -56,9 +56,9 @@ const TechStack = () => {
       {Object.entries(techStack).map(([category, items]) => (
         <div key={category} className="w-full mb-20">
           <h3 className="text-lg md:text-xl font-semibold mb-12 flex items-center justify-center gap-4 text-gray-200 uppercase tracking-widest">
-            <span className="h-[1px] w-12 bg-[#FF7ACD]/40"></span>
+            <span className="h-[1px] w-12 bg-[#8E3CA8]/60"></span>
             {category}
-            <span className="h-[1px] w-12 bg-[#FF7ACD]/40"></span>
+            <span className="h-[1px] w-12 bg-[#8E3CA8]/60"></span>
           </h3>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 place-items-center">

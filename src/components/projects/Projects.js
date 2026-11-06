@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <section 
             id="projects"
-            className="w-full py-20 border-b-[1px] border-[#FF7ACD]"
+            className="w-full py-20 border-b-[1px] border-[#8E3CA8]"
         >
             <div className="flex justify-center items-center text-center">
                 <Title
@@ -31,8 +31,8 @@ const Projects = () => {
                     website="https://virginiamarc.com/wf"
                 />
                 <ProjectsCard 
-                    title="PSD Studio - Creative Portfolio Website"
-                    des="A sleek, visually driven portfolio layout crafted to highlight creative work, brand identity, and digital storytelling through a refined, minimalist interface."
+                    title="PSDO Studio - Web Development & Software Solutions"
+                    des="A responsive business website showcasing custom web development, software solutions, and creative design services. Built with a modern interface, interactive components, and integrated contact and newsletter functionality."
                     src={projectThree}
                     github="https://github.com/virginiamarc/studio"
                     website="https://studio.pranswendeou.com"
