@@ -25,7 +25,7 @@ const techStack = {
 
   database: [
     { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
-    { name: "Database", icon: <FaDatabase className="text-red-500" /> },
+    { name: "MySQL", icon: <FaDatabase className="text-red-500" /> },
   ],
 
   tools: [
